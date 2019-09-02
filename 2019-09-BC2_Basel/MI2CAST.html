@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>The Minimum Information about a Molecular Interaction Causal Statement (MI2CAST)</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="  Vasundra Touré" />
+    <meta name="date" content="2019-09-09" />
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.3.1/css/all.min.css" rel="stylesheet" />
+    <link href="libs/font-awesome-5.3.1/css/v4-shims.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/my-theme.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# The Minimum Information about a Molecular Interaction Causal Statement (MI2CAST)
+## BC² WS2 - Annotation and curation of computational models in biology
+### <br> Vasundra Touré
+### 09/09/2019
+
+---
+
+layout: true
+
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+  &lt;img src="images/logos/ntnu.png" style="width:160px;height:30px;"&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+# What is a Causal Statement?
+
+![](images/causalStatement.svg)
+
+---
+
+# Causal statements in modeling
+
+.center[&lt;img src="images/levels_abstraction.png" width = 450px&gt;]
+
+---
+
+# Current representations of causal statements
+
+.pull-left[
+* SIF &lt;br&gt;
+  &lt;img src="images/sif.svg"&gt;
+]
+
+.pull-right[ 
+* MITAB2.8 &lt;br&gt;
+ &lt;img src="images/causaltab.png"&gt;
+ .small[
+ source: [Perfetto et al. 2019](https://doi.org/10.1093/bioinformatics/btz132)
+ ]
+
+]
+---
+count:false
+
+# Current representations of causal statements
+
+.pull-left[
+* SIF &lt;br&gt;
+  &lt;img src="images/sif.svg"&gt;
+&lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt; &lt;br&gt;&lt;br&gt; &lt;br&gt;
+* BEL 
+ &lt;img src="images/bel.jpeg" height="150px"&gt;
+ .small[
+ source: [Fluck et al. 2016](https://doi.org/10.1093/database/baw113)
+ ]
+]
+
+.pull-right[ 
+* MITAB2.8 &lt;br&gt;
+ &lt;img src="images/causaltab.png"&gt;
+ .small[
+ source: [Perfetto et al. 2019](https://doi.org/10.1093/bioinformatics/btz132)
+ ]
+ &lt;br&gt;&lt;br&gt;
+* GO-CAM &lt;br&gt;
+ &lt;img src="images/go-cam.jpg"&gt;
+ .small[
+ source: [GO-CAM website](https://geneontology.cloud/home)
+ ]
+]
+
+
+---
+
+
+# MI2CAST: from a checklist to guidelines
+
+## List of data to annotate about a causal interaction    
+
+
+&lt;img src="images/checklist.svg" width="700px"&gt;
+
+&lt;br /&gt;
+
+<i class="fa fa-arrow-circle-right"></i> Arranged in guidelines with ontologies &amp; CVs recommendations
+
+---
+
+# MI2CAST guidelines defines 4 rules
+Rule 1. Source and Target entity must be annotated  
+
+&lt;img src="images/mi2cast_entities.svg"&gt;
+
+---
+count:false
+
+# MI2CAST guidelines defines 4 rules
+Rule 1. Source and Target entity must be annotated  
+
+Rule 2. Regulation sign must be annotated
+
+.pull-left-large[&lt;img src="images/up-down_regulation.svg"&gt;]
+.pull-right-small[
+&lt;img src="images/regulation_mi.svg"&gt;
+]
+
+
+---
+count:false
+# MI2CAST guidelines defines 4 rules
+Rule 1. Source and Target entity must be annotated  
+
+Rule 2. Regulation sign must be annotated  
+
+Rule 3. Origin of interaction should be annotated  
+
+
+.pull-left-large[&lt;img src="images/rule3.svg"&gt;]
+
+---
+count:false
+# MI2CAST guidelines defines 4 rules
+Rule 1. Source and Target entity must be annotated  
+
+Rule 2. Regulation sign must be annotated  
+
+Rule 3. Origin of interaction should be annotated  
+
+Rule 4. Context of interaction should be specified  
+
+.pull-left-large[&lt;img src="images/rule4.svg"&gt;]
+
+
+---
+count:false
+# MI2CAST guidelines defines 4 rules
+Rule 1. Source and Target entity must be annotated  
+
+Rule 2. Regulation sign must be annotated  
+
+Rule 3. Origin of interaction should be annotated  
+
+Rule 4. Context of interaction should be specified 
+
+&lt;br /&gt;
+&lt;br /&gt;
+
+<i class="fa fa-arrow-circle-right"></i> MI2CAST on  GitHub <i class="fab fa-github"></i> : [vtoure/MI2CAST](https://github.com/vtoure/MI2CAST)  
+
+<i class="fa fa-arrow-circle-right"></i> Manuscript in preparation!
+---
+
+# Coverage of MI2CAST
+
+.center[
+
+| Term                    |  SIF  |  MITAB2.8  |  BEL  |  GO-CAM  |
+|-------------------------|-----|----------|-----|--------|
+| source entity           |  *  |     *    |  *  |    *   |
+| target entity           |  *  |     *    |  *  |    *   |
+| regulation sign         |  *  |     *    |  *  |    *   |
+| reference               |     |     *    |  *  |    *   |
+| evidence                |     |     *    |  *  |    *   |
+| biological activity     |     |     *    |  *  |    *   |
+| biological mechanism    |     |     *    |     |    *   |
+| biological type         |     |     *    |  *  |        |
+| taxon entity            |     |     *    |     |    *   |
+| experimental setup      |     |     *    |     |        |
+| biological modification |     |     *    |  *  |        |
+| taxon interaction       |     |     *    |  *  |        |
+| cell line               |     |          |  *  |        |
+| tissue type             |     |          |     |    *   |
+| cell type               |     |          |  *  |    *   |
+| compartment             |     |          |  *  |    *   |
+]
+
+---
+
+# MI2CAST's added-value
+
+.pull-left-small[
+<i class="fa fa-search"></i> Guide curators for contextual annotation  
+
+<i class="fa fa-microscope"></i> Guide biologists for experimental design  
+
+<i class="fa fa-project-diagram"></i> Data consistency for model building 
+]
+
+.pull-right-large[&lt;img src="images/levels_abstraction.png" width = 450px&gt; ]
+
+---
+# Concrete biological examples
+
+* [Transcription factor target gene interaction](https://github.com/vtoure/MI2CAST/blob/master/examples/TF-TG.md)
+
+| Term                         | Identifier | Name/Label                                     | Database                          |
+|------------------------------|------------|------------------------------------------------|-----------------------------------|
+| source                       | A0AVK6     | E2F8                                           | Uniprot                           |
+| target                       | 898        | CCNE1                                          | Entrez gene                       |
+| regulation sign              | 2240       | down-regulates                                 | PSI-MI                            |
+| reference                    | 16179649   | "Characterization of E2F8, a novel..."         | Pubmed                            |
+| evidence 1                   | 0000269    | exp. evidence used in manual assertion         | ECO                               |
+| evidence 2                   | 0001805    | luciferase reporter gene assay evidence        | ECO                               |
+| biological mechanism         | 2247       | transcription regulation                       | PSI-MI                            |
+| compartment (interaction)    | 0005634    | nucleus                                        | GO:CC                             |
+| taxon                        | 9606       | Homo sapiens                                   | NCBI taxonomy                     |
+| cell line                    | 0001938    | human osteosarcoma cell line                   | BTO                               |
+| exp. setup source 1          | 0506       | over expressed level                           | PSI-MI                            |
+| exp. setup source 2          | 0331       | engineered                                     | PSI-MI                            |
+| exp. setup target 1          | 0331       | engineered                                     | PSI-MI                            |
+| exp. setup target 2          | 0001679    | transcription\_regulatory\_region              | SO                                |
+
+---
+
+# Concrete biological examples
+
+* [Protein kinase A regulation](https://github.com/vtoure/MI2CAST/blob/master/examples/PKA_regulation.md)
+
+| Term                         | Identifier | Name/Label                                     | Database                          |
+|------------------------------|------------|------------------------------------------------|-----------------------------------|
+| source                       | 17489      | 3',5'-cyclic AMP                               | ChEBI                             |
+| target                       | P17612     | cAMP-dependent PKA catalytic                   | Uniprot                           |
+| regulation sign              | 2236       | up-regulates activity                          | PSI-MI                            |
+| reference                    | 26687711   | "Protein kinase A catalytic subunit... "       | Pubmed                            |
+| evidence                     | 0000302    | author statement used in manual assertion      | ECO                               |
+| biological activity source   | 0034237    | protein kinase A regulatory subunit binding    | GO:MF                             |
+| biological activity target   | 0004672    | protein kinase activity                        | GO:MF                             |
+| compartment of interaction   | 0005737    | cytoplasm                                      | GO:CC                             |
+| taxon                        | 9606       | Homo sapiens                                   | NCBI taxonomy                     |
+
+---
+
+# MI2CAST support with the [causalBuilder](https://vtoure.github.io/causalBuilder/)
+![](images/fill_vsm.gif)
+
+* Exports: causal-JSON + [MITAB2.8](https://psicquic.github.io/MITAB28Format.html) (planned)
+* Autocomplete for &gt;800 ontologies with [VSM-dictionary-combiner](https://github.com/vsmjs/vsm-dictionary-combiner)
+
+
+.medium[
+Use of [VSM technology](https://github.com/vsmjs/) &amp; GitHub pages ([Jekyll Cayman theme](https://github.com/pages-themes/cayman))]
+
+
+---
+
+# Acknowledgements
+
+.pull-left-large[
+  &lt;img src="images/druglogics_org.svg"&gt;
+  ]
+  
+.pull-right-small[
+  &lt;img src="images/logos/ntnu_hoved.png"&gt;
+  
+  &lt;img src="images/logos/ntnu_helse.jpeg"&gt;
+  
+  &lt;img src="images/logos/cost.png"&gt;
+  
+  &lt;img src="images/logos/eracosysmed.jpg"&gt;
+
+]
+
+
+  <i class="fab fa-github"></i>  [vtoure](https://github.com/vtoure/)  
+  <i class="fab fa-twitter"></i> [@Vsndr_T](https://twitter.com/Vsndr_T)
+
+.small[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]
+
+
+---
+
+# List of abbreviations
+
+.medium[
+* MI2CAST &amp;nbsp; Minimum Information about a Molecular Interaction Causal Statement 
+* BEL &amp;nbsp; Biological Expression Language  
+* GO-CAM &amp;nbsp; Gene Ontology Causal Activity Model  
+* PSI-MI &amp;nbsp; Proteomics Standards Initiative Molecular Interactions  
+* RO &amp;nbsp; Relation Ontology  
+* PMID &amp;nbsp; Pubmed Identifier  
+* DOI &amp;nbsp; Digital Object Identifier  
+* ECO &amp;nbsp; Evidence and Conclusion Ontology  
+* GO:MF &amp;nbsp; Gene Ontology Molecular Function  
+* ChEBI &amp;nbsp; Chemical Entities of Biological Interest  
+* SO &amp;nbsp; Sequence Ontology  
+* BTO &amp;nbsp; BRENDA Tissue Ontology  
+* CL &amp;nbsp; Cell Ontology  
+* Uberon &amp;nbsp; Uber Anatomy Ontology  
+* GO:CC &amp;nbsp; Gene Ontology Cellular Component  
+]
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
