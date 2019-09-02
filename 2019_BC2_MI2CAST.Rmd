@@ -271,10 +271,11 @@ Use of [VSM technology](https://github.com/vsmjs/) & GitHub pages ([Jekyll Cayma
 ]
 
 
-  `r shiny::icon("github")`  [vtoure](https://github.com/vtoure/)  
-  `r shiny::icon("twitter")` [@Vsndr_T](https://twitter.com/Vsndr_T)
+.pull-left-large[
+`r shiny::icon("github")`  [vtoure](https://github.com/vtoure/)  
+`r shiny::icon("twitter")` [@Vsndr_T](https://twitter.com/Vsndr_T)
 
-.small[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]
+.small[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]]
 
 
 ---
