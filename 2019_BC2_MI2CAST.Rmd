@@ -26,13 +26,6 @@ layout: true
 
 ![](images/causalStatement.svg)
 
----
-
-# Causal statements in modeling
-
-.center[<img src="images/levels_abstraction.png" width = 450px>]
-
----
 
 # Current representations of causal statements
 
@@ -50,7 +43,6 @@ layout: true
 
 ]
 ---
-count:false
 
 # Current representations of causal statements
 
@@ -102,7 +94,6 @@ Rule 1. Source and Target entity must be annotated
 <img src="images/mi2cast_entities.svg">
 
 ---
-count:false
 
 # MI2CAST guidelines defines 4 rules
 Rule 1. Source and Target entity must be annotated  
@@ -116,7 +107,7 @@ Rule 2. Regulation sign must be annotated
 
 
 ---
-count:false
+
 # MI2CAST guidelines defines 4 rules
 Rule 1. Source and Target entity must be annotated  
 
@@ -128,7 +119,7 @@ Rule 3. Origin of interaction should be annotated
 .pull-left-large[<img src="images/rule3.svg">]
 
 ---
-count:false
+
 # MI2CAST guidelines defines 4 rules
 Rule 1. Source and Target entity must be annotated  
 
@@ -142,7 +133,7 @@ Rule 4. Context of interaction should be specified
 
 
 ---
-count:false
+
 # MI2CAST guidelines defines 4 rules
 Rule 1. Source and Target entity must be annotated  
 
